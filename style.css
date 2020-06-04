@@ -2,9 +2,9 @@
 
 :root {
     --main-white: #f0f0f0;
-    --main-purple: #4c1a57;
-    --main-blue: #00e5e8;
-    --main-green: #007c77;
+    --main-purple: #e31b6d;
+    --main-light-gray: #d3d3d3;
+    --main-dark-gray: #252934;
 }
 
 
@@ -113,7 +113,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-purple);
+    background: #1b242f;
     box-shadow: 0 2px rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
@@ -139,7 +139,7 @@ a {
 }
 
 .nav-list a:hover {
-    background: var(--main-blue);
+    background: var(--main-purple);
 }
 
 
@@ -152,9 +152,7 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    /* GTA Vice City Gradient :) */
-    background-image: linear-gradient(to right, #3494e6 0%, #ec6ead);
+    background-color: var(--main-dark-gray);
 }
 
 .welcome-section>p {
@@ -169,13 +167,13 @@ a {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: linear-gradient(to right, #67b26f, #4ca2cd);
+    background: var(--main-light-gray);
 }
 
 .projects-section-header {
     max-width: 640px;
+    color: var(--main-dark-gray);
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
 }
 
 @media (max-width: 28.75rem) {
@@ -204,18 +202,19 @@ a {
 }
 
 .project {
-    background: var(--main-green);
+    background: var(--main-white);
+    color: var(--main-dark-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
 
 .code {
-    color: var(--main-green);
+    color: var(--main-dark-gray);
     transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-    color: #ff7f50;
+    color: var(--main-purple);
 }
 
 .project-image {
@@ -231,7 +230,7 @@ a {
 
 .btn-show-all {
     font-size: 2rem;
-    background: var(--main-green);
+    background: var(--main-dark-gray);
     transition: background 0.3s ease-out;
 }
 
@@ -251,7 +250,7 @@ a {
     width: 100%;
     height: 100vh;
     padding: 0 2rem;
-    background: var(--main-green);
+    background: var(--main-dark-gray);
 }
 
 .contact-section-header>h2 {
@@ -283,7 +282,6 @@ a {
 
 .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
 }
 
