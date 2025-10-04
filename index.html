@@ -1,46 +1,319 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergey Gunyashov</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <title>barhan44.github.io</title>
 </head>
 
 <body>
-    <div class="nav">
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">Back to top</a>
-            </li>
-            <li>
-                <a href="#about-me">About me</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <div id="welcome-section" class="welcome-section">
-        <h1>Hello, I'm Sergey.</h1>
-        <p>The same full-stack developer.</p>
-    </div>
-    <div id="about-me" class="about-me-section">
-        <h2 class="about-me-section-header">That's me!</h2>
-    </div>
-    <div id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Have a question or want to work together?</h2>
-            <p>Keep my contacts below!</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h2>Sergey Gunyashov</h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#about" class="nav__link">Professional Summary</a></li>
+                        <li><a href="#skills" class="nav__link">Skills</a></li>
+                        <li><a href="#projects" class="nav__link">Portfolio</a></li>
+                        <li><a href="#interests" class="nav__link">Interests</a></li>
+                    </ul>
+                    <button class="nav__toggle" aria-label="Открыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
         </div>
-        <div class="contact-links">
-            <a class="btn contact-details" target="_blank" href="https://www.linkedin.com/in/sergey-gunyashov-94a18418b">Linkedin</a>
-            <a class="btn contact-details" target="_blank" href="https://github.com/barhan44/">Github</a>
-            <a class="btn contact-details" href="mailto:sergey.gunyashov@gmail.com">Send a mail</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__photo">
+                    <div class="hero__photo-placeholder"></div>
+                </div>
+                <div class="hero__info">
+                    <h1 class="hero__name">Sergey Gunyashov</h1>
+                    <h2 class="hero__position">Senior Java Developer / Tech Lead</h2>
+                    <p class="hero__tagline">Developing reliable enterprise solutions since 2015</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Main Info Section -->
+    <section class="main-info">
+        <div class="container">
+            <div class="main-info__grid">
+                <div class="main-info__item">
+                    <h3>Position</h3>
+                    <p>Senior Java Developer / Tech Lead</p>
+                </div>
+                <div class="main-info__item">
+                    <h3>Location</h3>
+                    <p>Moscow, Russia<br><small>Work remotely</small></p>
+                </div>
+                <div class="main-info__item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:gunyashov44@gmail.com">gunyashov44@gmail.com</a></p>
+                </div>
+                <div class="main-info__item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/sergey-gunyashov-94a18418b"
+                            target="_blank">https://www.linkedin.com/in/sergey-gunyashov-94a18418b</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section__title">Professional Summary</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <h3>Professional Background</h3>
+                    <p>Over the past <b>10 years</b> in software development, I have progressed from a <b>Junior</b> to a <b>Senior Java
+                        Developer and Tech Lead</b>. My expertise lies in developing <b>high-load enterprise systems</b> and
+                        <b>microservice architectures</b>. I have extensive experience <b>leading development teams</b> of up to 5
+                        engineers.</p>
+                </div>
+
+                <div class="about__achievements">
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements__list">
+                        <li>Developed <b>search system</b> architecture capable of processing over <b>10,000</b> search queries per second</li>
+                        <li>Successfully managed <b>multiple development teams</b> (3-5 developers each), implemented and scaled <b>effective development processes</b> across several projects</li>
+                        <li>Initiated and led technical <b>debt reduction</b> initiative</li>
+                        <li>Efficiently led the <b>migration</b> of multiple monolithic applications <b>to microservices architecture</b>, improving <b>scalability</b> and <b>maintainability</b></li>
+                        <li>Significantly <b>enhanced system performance</b> through <b>comprehensive optimization</b> initiatives, resulting in substantial improvements in <b>speed and efficiency</b></li>
+                    </ul>
+                </div>
+
+                <div class="about__specialization">
+                    <h3>Areas of Expertise</h3>
+                    <ul class="specialization__list">
+                        <li>Enterprise Java Development</li>
+                        <li>Microservice Architecture Design</li>
+                        <li>High-Load Systems</li>
+                        <li>Enterprise Solutions Integration</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="about__approach">
+                    <h3>Development Philosophy and Practices</h3>
+                    <ul class="approach__list">
+                        <li><b>Agile & DevOps Advocate</b> — actively embrace Agile methodologies and DevOps practices to foster continuous integration, delivery, and collaboration within cross-functional teams</li>
+                        <li><b>Modern Development Approaches</b> — leverage TDD (Test-Driven Development) and DDD (Domain-Driven Design) principles to build robust, maintainable software solutions</li>
+                        <li><b>Code Quality & Documentation</b> — prioritize writing clean, maintainable code and creating comprehensive documentation to ensure long-term project success and knowledge transfer</li>
+                        <li><b>Continuous Learning & Knowledge Sharing</b> — stay ahead of industry trends by continuously exploring emerging technologies and actively mentoring team members through knowledge sharing sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section__title">Key Skills</h2>
+            <div class="skills__grid">
+                <div class="skills__category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Java 8-21</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3>Spring Ecosystem</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Spring Framework</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">Spring Data</span>
+                        <span class="skill-tag">Spring Cloud</span>
+                        <span class="skill-tag">Spring Batch</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3>Frameworks</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Java EE</span>
+                        <span class="skill-tag">Apache Kafka</span>
+                        <span class="skill-tag">Hibernate</span>
+                        <span class="skill-tag">JUnit</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3>Databases</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3>Tools</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                        <span class="skill-tag">JProfiler</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">TeamCity</span>
+                        <span class="skill-tag">SonarQube</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3>Methodologies</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">TDD</span>
+                        <span class="skill-tag">DDD</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Event-Driven Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section__title">Project Portfolio</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>Search Service</h3>
+                        <span class="project-card__type">Enterprise Application</span>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            Developed and maintained a high-performance search service with the capability to process over <b>10,000 search queries per second</b>, utilizing <b>Elasticsearch</b> as the core technology.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Java 11-17</span>
+                            <span class="tech-tag">Spring-boot 2 / 3</span>
+                            <span class="tech-tag">ElasticSearch</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <p class="project-card__results">
+                            <strong>Result:</strong> Achieved 99.9% uptime with minimal latency
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>Data Processing Pipeline</h3>
+                        <span class="project-card__type">ETL Solution</span>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            Designed and implemented a robust <b>ETL pipeline</b> for data processing, leveraging <b>Spring Batch and Apache Kafka</b> for scalable and reliable data processing.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Java 11-17</span>
+                            <span class="tech-tag">Spring-boot 2 / 3</span>
+                            <span class="tech-tag">Spring Batch</span>
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <p class="project-card__results">
+                            <strong>Result:</strong> significantly improved data processing efficiency, ensuring reliable and scalable data preparation for Elasticsearch while maintaining high performance and data integrity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>Distributed Document Storage System</h3>
+                        <span class="project-card__type">Enterprise Solution</span>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            Developed a highly scalable <b>distributed document storage system</b> utilizing a hybrid database approach with <b>Spring Framework, PostgreSQL, and MongoDB</b> to handle structured and unstructured data efficiently.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Java 11</span>
+                            <span class="tech-tag">Spring-boot</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <p class="project-card__results">
+                            <strong>Result:</strong> Supported 100K+ concurrent users + processed millions of documents with low latency
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section__title">Professional Interests</h2>
+            <div class="interests__list">
+                <div class="interest-item">
+                    <h3>Modern Application Architecture Approaches</h3>
+                    <p>Exploring and implementing modern approaches to application architecture, focusing on microservices, cloud-native solutions, and scalable system design</p>
+                </div>
+                <div class="interest-item">
+                    <h3>JVM Performance and Optimization</h3>
+                    <p>Application Profiling, Garbage Collection Tuning, and Memory Management</p>
+                </div>
+                <div class="interest-item">
+                    <h3>DevOps Practices and Automation</h3>
+                    <p>CI/CD pipeline, Infrastructure as Code, Monitoring and Observability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h4>Sergey Gunyashov</h4>
+                    <p>Senior Java Developer / Tech Lead</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:gunyashov44@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/sergey-gunyashov-94a18418b" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/barhan44" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 Sergey Gunyashov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
